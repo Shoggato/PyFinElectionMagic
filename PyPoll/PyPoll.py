@@ -2,7 +2,7 @@
 import os, csv
 
 # sets up a path to the data file
-election_data = os.path.join('Resources', 'election_data.csv')
+election_data = os.path.join('python-challenge','PyPoll','election_data.csv')
 
 #variables to be used later
 total_votes_list = []

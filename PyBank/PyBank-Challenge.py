@@ -2,7 +2,7 @@
 import os, csv
 
 # sets up a path to the data file
-budget_date = os.path.join('Resources','budget_data.csv')
+budget_date = os.path.join('python-challenge','PyBank','budget_data.csv')
 
 # declared variables for future use
 months = []
@@ -55,14 +55,14 @@ with open(budget_date) as csvfile:
     #calculates the average and then applies a round() function to two decimals
     average_change_total = round((change_profit_loss / (months_len - 1)), 2)
 
-
+print(f"Financial Analysis\n---------------------------------------------------------")
 print(f"Total Months: {months_len}")
 print(f"Total: ${net_total}")
 print(f"Average Change: ${average_change_total}")
 print(f"Greatest Increase in Profits: {greatest_increase_profit[0]} $({greatest_increase_profit[1]})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_profit[0]} $({greatest_decrease_profit[1]})")
 
-output_file = os.path.join("PyBank", "PyBank_Final.txt")
+output_file = os.path.join('python-challenge','PyBank')
 with open("PyBank_final.txt", "w") as text:
     text.write("Financial Analysis\n")
     text.write("---------------------------------------------------------\n")
