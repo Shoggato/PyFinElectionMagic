@@ -62,7 +62,7 @@ print(f"Average Change: ${average_change_total}")
 print(f"Greatest Increase in Profits: {greatest_increase_profit[0]} $({greatest_increase_profit[1]})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_profit[0]} $({greatest_decrease_profit[1]})")
 
-output_file = os.path.join('python-challenge', 'PyBank', 'analysis', 'PyBank')
+output_file = os.path.join('python-challenge', 'PyBank', 'analysis', 'PyBank_final.txt')
 with open("PyBank_final.txt", "w") as text:
     text.write("Financial Analysis\n")
     text.write("---------------------------------------------------------\n")
