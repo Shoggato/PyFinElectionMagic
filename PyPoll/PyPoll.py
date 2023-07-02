@@ -2,7 +2,7 @@
 import os, csv
 
 # sets up a path to the data file
-election_data = os.path.join('python-challenge','PyPoll','election_data.csv')
+election_data = os.path.join('python-challenge','PyPoll','Resources', 'election_data.csv')
 
 #variables to be used later
 total_votes_list = []
@@ -60,7 +60,7 @@ print(f"Total Votes: {len(total_votes_list)} \n---------------------------------
 print(f"{first_candidate}: {first_candidate_pervotes}% ({first_candidate_votes}) \n{second_candidate}: {second_candidate_pervotes}% ({second_candidate_votes}) \n{third_candidate}: {third_candidate_pervotes}% ({third_candidate_votes}) \n------------------------------------------")
 print(f"Winner: {second_candidate}")
 
-output_file = os.path.join("PyPoll","PyPoll_Final.txt")
+output_file = os.path.join('python-challenge', 'PyPoll', 'analysis', "PyPoll_Final.txt")
 with open("PyPoll_Final.txt", "w") as text:
     text.write("Election results\n")
     text.write("------------------------------------------\n")
