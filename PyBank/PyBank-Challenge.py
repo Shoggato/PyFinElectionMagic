@@ -2,7 +2,7 @@
 import os, csv
 
 # sets up a path to the data file
-budget_date = os.path.join('python-challenge','PyBank', 'Resources', 'budget_data.csv')
+budget_date = os.path.join('C:','Users','eeels','Documents','GitHub','python-challenge','PyBank','Resources','budget_data.csv')
 
 # declared variables for future use
 months = []
@@ -62,8 +62,8 @@ print(f"Average Change: ${average_change_total}")
 print(f"Greatest Increase in Profits: {greatest_increase_profit[0]} $({greatest_increase_profit[1]})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_profit[0]} $({greatest_decrease_profit[1]})")
 
-output_file = os.path.join('python-challenge', 'PyBank', 'analysis', 'PyBank_final.txt')
-with open("PyBank_final.txt", "w") as text:
+output_file = os.path.join('C:','Users','eeels','Documents','GitHub','python-challenge','PyBank', 'analysis', 'PyBank_final.txt')
+with open(output_file, "w") as text:
     text.write("Financial Analysis\n")
     text.write("---------------------------------------------------------\n")
     text.write(f"Total Months: {months_len}\n")
